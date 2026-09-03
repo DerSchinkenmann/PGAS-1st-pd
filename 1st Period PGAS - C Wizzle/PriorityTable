@@ -1,0 +1,18 @@
+#This file is the priority table for python operators
+
+#Top to Bottom Priority/Precedence
+
+#1. Parentheses/()
+#2. Exponentiation/**
+#3. Unary plus and minus, and bitwise not/ +x, -x, ~x
+#4. Mult, Div, Floor Div, Modulo/*, /, //, %
+#5. Add, Subtract/+, -
+#6. Bitwise L&R Shift/ <<, >>
+#7. Bitwise And/&
+#8. Bitwise Xor/^
+#9. Bitwise Or/|
+#10. Comparison Operators and Membership operators
+#10.1 ==, !=, >, >=, <=, <=, is, is not, in, not in
+#11. Logical NOT/not
+#12. Logical AND/and
+#13. Logical OR/or

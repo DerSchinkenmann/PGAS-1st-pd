@@ -1,0 +1,46 @@
+#the general format for a while loop is as follows:
+#while conditional
+#   instruction
+
+#this format is nearly the same as if loops, just replace if with while
+
+
+
+counter = 5
+while counter != 0:
+    print(f'loop {counter}')
+    counter -=1
+print("loop finished")
+
+#this is a basic example of a loop with a counter, as well as an example
+#of definite repitition
+#another way of doing this is "while counter:", which is shorter
+#but much less readable
+
+
+for i in range(100):
+    print(i)
+    pass
+
+#for loops are another useful loop type, and is better for "browsing 
+#large collections of data item by item." This is because it can 
+#easily be set to do a dynamic number of loops
+
+#the elements of the loop are as follows:
+#for:opens the loop
+#variable: holds the number of loops
+#in: introduces element desribing range of possible values
+#range:generates all desired values. in this case it does [1...100]
+#pass:does nothing, here b/c the loop expects something to be there
+
+
+for i in range(1,15):
+    print(i)
+
+#this shows the second argument the range func can have, the first arg
+#is the starting number, the second is the ending number
+
+for i in range(1,15,5):
+    print(i)
+
+#this shows the third argument, being the number the loop increments by

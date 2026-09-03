@@ -1,0 +1,8 @@
+#expected output:
+#"I'm"
+#""learning""
+#"""Python"""
+#obj:Single line print statement using newline and escape characters
+
+
+print("\"I\'m\"\n\"\"learning\"\"\n\"\"\"Python\"\"\"")

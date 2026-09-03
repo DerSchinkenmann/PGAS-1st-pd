@@ -1,0 +1,7 @@
+john = 3
+mary = 5
+adam = 6
+
+total_apples = john+mary+adam
+
+print(john, mary, adam, f"\n total apples={total_apples}", sep=", ")

@@ -1,0 +1,19 @@
+#comments are remarks inserted into the program that are 
+#omitted at runtime. Comments are denoted by the hashtag symbol
+#well named variables are the best way of commenting variables
+#it is called self-commenting
+
+#the input func allows for the user to input data, and the func
+#returns said data
+
+print("enter a string")
+user_input=input()
+print("your string is", user_input)
+
+#unless otherwise stated, the input() function will return a str
+#you can change this behavior by stating x(input()), where x is
+#the desired data type. this is called type casting
+
+print("enter a float")
+float_input=float(input())
+print("Your float multiplied by 2 is ", float_input*2)

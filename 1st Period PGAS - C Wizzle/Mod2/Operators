@@ -1,0 +1,44 @@
+#Examples of operators are +, -, *, /, //(floor division, truncates),
+#%(modulo, gives the remainder), and **(exponents)
+
+print(2 ** 3)   #int
+print(2 ** 3.)  #float
+print(2. ** 3)  #float
+print(2. ** 3.) #float
+
+#if any expression contains a float, it will return a float
+
+print(4/2)
+
+#every division problem will also return a float, even if both ints
+
+print(4//2)
+print(4.//2)
+
+print(6//4)
+print(6//4.)
+
+#unless its floor division, in which it return float only if a 
+#float is present, but it will still only give you the int value
+#with an additional ".0"
+
+print(--4+5)
+print(-4+5)
+
+#the "-" sign means subtraction, but also can just change the sign,
+#such as the first statement, in which "--" is a positive, since its 
+#the opposite of the opposite sign 
+
+print(2+3*5)
+
+#order of operations is taken into account automatically in python
+#they also go left-side binding, meaning it will do the equation from 
+#left side first
+
+print(2**2**3)
+
+#except in the case of exponentiation which uses right-sided binding
+#this equation is (2)^(2^3), the 2 exponent is raised to the third
+
+#some uses of these are doing x%2 to get an even or odd value,
+#another being x^.5, which is the sqrt of x

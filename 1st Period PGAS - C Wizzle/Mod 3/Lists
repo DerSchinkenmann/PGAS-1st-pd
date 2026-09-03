@@ -1,0 +1,47 @@
+#lists are variables that store multiple values, they are identified by 
+#varname = [values,sep,by,comma]
+
+#you can also store a value to a certain index in the list by 
+#varname[index] = value
+
+#you can select certain index values of a list by using varname[index]
+#in place of the value you want to use
+
+#len(listname) is used to find the num of elements stored in the list
+
+#del listname[index] is used to delete the value at the index value
+
+#negative indices are a useful tool, listname[-1] will return the last 
+#value, listname[-2] will return the second to last, etc
+
+#methods are a specific kind of function that mainly differs in its
+#invocation syle. a func doesnt belong to any data,
+#it gets (and may create) data and generally returns a result.
+#a method does all of this, but is also able to change the state of a 
+#selected entity. 
+#a method is owned by the data it works for, a func is owned by the 
+#whole code
+
+#an example of a method is data.method(arg), while a func is func(arg)
+#the name of the data precedes the method and is seperated by a dot 
+#the method behaves like a func, but can change the internal state of 
+#the data from which it was invoked
+
+#all of this matters because methods are how you add elements to a list
+#list.append(value) & list.insert(index, value) are the two main ways
+
+#for loops have a very important purpose in indexing
+
+my_list = [10, 1, 8, 3, 5]
+total = 0
+
+for i in my_list:
+    total += i
+
+print(total)
+
+#this snippet adds together each of the indexes and prints the total
+#line 38 shows how python automatically handles dynamic list sizes
+#instead needing to write "for i in range(len(my_list)):" and the var
+#'i' serves the dual purpose of storing the indices value in the list
+#to add to the total

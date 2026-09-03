@@ -1,0 +1,12 @@
+#the four most basic Logic gates implemented in python are as follows:
+#and(&& for bitwise) returns true if both inputs are true.
+#or(|| for bitwise) returns true if either inputs are true or if both
+#xor(^ for bitwise) returns true if only one input is true
+#not(~ for bitwise), reverses true or false value
+
+#the difference between the two versions is that the symbols are for 
+#bitwise operations, and the names are for logic.
+
+#another bitwise operator are the binary shifts, << and >>. these
+#shift the number one bit left or right, with << adding x amount of 
+#0's to the right, and >> removing x amount of bits from the right

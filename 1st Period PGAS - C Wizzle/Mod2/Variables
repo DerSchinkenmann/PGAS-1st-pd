@@ -1,0 +1,14 @@
+#variable names must begin with a letter and only contain letters
+#, numbers, and the "_" character. Variable are case sensitive
+#also cant use reserved keywords unless you change the case, in
+#which you still shouldnt use them
+
+#you can put any value inside of a var, and you dont have to 
+#declare it. 
+
+one = 1
+print(one)
+
+print("one")
+
+#this is an example of variables vs literals.
