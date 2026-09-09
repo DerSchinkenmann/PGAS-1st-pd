@@ -45,3 +45,66 @@ print(total)
 #instead needing to write "for i in range(len(my_list)):" and the var
 #'i' serves the dual purpose of storing the indices value in the list
 #to add to the total
+
+
+#there are also two sort functions, sort.list and reverse.list
+my_list.sort() 
+print(my_list)
+
+my_list.reverse()
+print(my_list)
+
+
+
+list_1 = [1]
+list_2 = list_1
+list_1[0] = 2
+print(list_2)
+
+#this shows how if you were to set list_2 equal to list_1, it just
+#makes their names(and memory location) the same. this means that it
+#doesnt copy the contents of the list, but makes it so any operation
+#done to list_2 is also done to list_1
+
+
+list_1 = [1]
+list_2 = list_1[:]
+list_1[0] = 2
+print(list_2)
+
+#this is how you would copy the contents, not just change the name.
+#the colon is a slice, which makes a new copy of a list(or parts of it)
+#my_list[start:end] is the general form of it. if no start is set, it
+#defaults to the first element in the list, otherwise it uses the index
+
+#another thing you can do with the slice is delete the contents of a
+#list, but not the list itself. usually running del my_list would del
+#the memory location and free up the name of the list, but using the 
+#slice would just delete the contents of the list
+
+my_list = [0, 3, 12, 8, 2]
+
+print(5 in my_list)
+print(5 not in my_list)
+print(12 in my_list)
+
+#the in operator will look through the list for number and return 
+#true if its there vice versa
+
+
+squares = [x ** 2 for x in range(10)]
+print(squares)
+
+#this is an example of an advanced list - a multidimensional array
+#in this example, the list squares doesn't have predefined data, it is
+#instead filled on runtime by doing the operation x^2 ten times
+#adding ten elements to 'squares', being the first ten perfect squares
+
+#python arrays can have multiple axes, called dimensions. a single axis
+#array is called a list, while a two-dimensional array is called a table
+
+
+board = [['' for i in range(8)] for j in range(8)]
+
+#this is an example of a nested list comprehension. is this case, it
+#prints an empty space 8 times, 8 times, or 8^2
