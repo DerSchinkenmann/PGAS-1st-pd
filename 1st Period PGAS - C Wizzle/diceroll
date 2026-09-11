@@ -1,0 +1,26 @@
+import random
+
+rollList = []
+
+inLine = False
+sorted = False
+rollCount = 0
+i=0
+
+
+while sorted == False:
+    rollCount+=1
+    if len(rollList) == 6:
+        sorted = True
+        continue    
+    roll = random.randint(1,6)
+    print(roll)
+    if roll == i+1:
+        rollList.append(roll)
+        i += 1
+        print(rollList)
+    else:
+        i=0
+        del rollList[:]
+    
+print(f'Completed roll is {rollList}, it took {rollCount} rolls.')
