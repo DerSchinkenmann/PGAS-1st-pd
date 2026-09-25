@@ -33,3 +33,15 @@ print(addition(num2=5, num1=7))
 #being without an expressions, which basically just exits the function
 #the second(and arguably more important), is to return a value.
 #the functions earlier in this program contain returns with value
+
+#vars have scopes, meaning that depending on whether the var was 
+#defined inside of the function or defined outside of it, it will 
+#serve a different purpose. 
+#a var defined within a function is a local var, meaning it is only 
+#used in the context of the function and is disregarded when the func
+#is finished
+#global variables can be used anywhere, inside or outside funcs
+#you can also turn local vars into global vars by adding the 
+#keyword 'global' before the var, making the var modifiable and
+#persistent to the outside var
+#  
